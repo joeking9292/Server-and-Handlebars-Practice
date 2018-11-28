@@ -3,7 +3,7 @@
  * @oregonstate.edu email address below.
  *
  * Name: Joseph Noonan
- * Email:
+ * Email: noonanj@oregonstate.edu
  */
 
 /*
