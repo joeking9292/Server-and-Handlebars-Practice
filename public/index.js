@@ -3,7 +3,7 @@
  * @oregonstate.edu email address below.
  *
  * Name: Joseph Noonan
- * Email: noonanj@oregonstate.edu
+ * Email: noonanj@oregonstate.edu 
  */
 
 /*
@@ -29,6 +29,19 @@
  * </div>
  */
 function insertNewPost(description, photoURL, price, city, condition) {
+
+    var postCardContent = {
+        description: description,
+        photoURL: photoURL,
+        price: price,
+        city: city,
+        condition: condition
+    };
+
+    var postCardHTML = Handlebars.templates.postCard(postCardContent);
+
+
+
 
     // Create the containing <div> element.
     var postDiv = document.createElement('div');
@@ -90,7 +103,6 @@ function insertNewPost(description, photoURL, price, city, condition) {
      */
     var postsSection = document.getElementById('posts');
     postsSection.appendChild(postDiv);
-
 }
 
 
