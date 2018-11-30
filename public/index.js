@@ -40,8 +40,8 @@ function insertNewPost(description, photoURL, price, city, condition) {
 
     var postCardHTML = Handlebars.templates.postCard(postCardContent);
 
-    var postCardContainer = document.getElementById('post');
-    postCardContainer.insertAdjacentElement('beforeend', postCardHTML);
+    var postCardContainer = document.getElementById('posts');
+    postCardContainer.insertAdjacentHTML('beforeend', postCardHTML);
 
 
     // // Create the containing <div> element.
